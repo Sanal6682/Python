@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, rgb(253, 236, 3), rgb(4, 4, 249));
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #6e8efb;
+      outline: none;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background: #6e8efb;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-button:hover {
+      background: #5a74e8;
+    }
+
+    .create-account {
+      margin-top: 20px;
+    }
+
+    .create-account a {
+      color: #6e8efb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .create-account a:hover {
+      color: #4e63d7;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to JDesk</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+      </div>
+      <button type="submit" class="login-button">Login</button>
+    </form>
+    <div class="create-account">
+      <p>Don't have an account? <a href="#">Create new account</a></p>
+    </div>
+  </div>
+</body>
+</html>

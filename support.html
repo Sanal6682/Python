@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      align-items: center;
+      padding:0px;
+    }
+
+    .contsiner {
+      text-align: center;
+    }
+
+    .flex {
+      display: flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap: 20px;
+    }
+
+    .image-item {
+      width: 400px;
+    }
+
+    .image-item img {
+      width: 100%;
+      height:max-content;
+      align-items: center;
+      border-radius: 16px;
+      border-top: 50px;
+      border-bottom: 50px;
+      border-width: 50px;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="flex">
+    <div class="image-item">
+      <img src="training.jpg" alt="training">
+    <div class="caption"><b>Training</b></div>
+    </div>
+    <div class="image-item">
+      <img src="smartlabs.jpg"alt="smartlabs">
+    <div class="caption"><b>Smart labs</b></div>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="image-item">
+      <img src="jobs.jpg" alt="jobs">
+    <div class="caption"><b>Placements</b></div>
+    </div>
+    <div class="image-item">
+      <img src="support.jpg" alt="support">
+    <div class="caption"><b>Support</b></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
